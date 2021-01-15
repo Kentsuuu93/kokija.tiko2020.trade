@@ -1,2 +1,4 @@
-# Team2
-PTIETS20, Team 2 Projektityö
+# kokija.tiko2020.trade
+
+Tähän tulee kokija.tiko2020.trade-sivuston lähdekoodi. Kehitys on vielä pahasti kesken.
+
