@@ -41,11 +41,50 @@ body {
   grid-area: footer;
 }
 
+/* Header */
+
+#primary-header,
+#primary-header a,
+#primary-header a:visited {
+  color: #0f000c;
+  text-decoration: none;
+}
+
+#primary-header nav ul {
+  padding: 0;
+  margin: 0.1em 0;
+  font-size: 1em;
+  list-style-type: none;
+}
+
+#primary-header nav li {
+  display: inline-block;
+  margin: 0.1em;
+}
+
+#primary-header nav li a {
+  padding: 0.1em;
+  background-color: #ff0080;
+  border-radius: 3px;
+}
+
 /* Typography */
 
 body {
   font-size: 16px;
   line-height: 1.5em;
+}
+
+a {
+  color: #00295e;
+}
+
+a:hover {
+  color: #00295e;
+}
+
+a:visited {
+  color: #00295e;
 }
 
 /* Media queries */
