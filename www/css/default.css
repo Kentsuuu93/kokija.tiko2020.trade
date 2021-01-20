@@ -7,8 +7,8 @@
 
 html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .hidden {
@@ -18,14 +18,14 @@ body {
 /* GRID */
 
 #layout {
-  min-height: 100%;
   display: grid;
   grid-template-areas:
-    'header       header        header'
-    'left-panel   content       right-panel'
-    'footer       footer        footer';
+    "header           header        header"
+    "left-panel       content       right-panel"
+    "footer           footer        footer";
   grid-template-columns: 1fr 28fr 1fr;
   grid-template-rows: auto 1fr auto;
+  min-height: 100%;
 }
 
 #primary-header {
@@ -43,6 +43,14 @@ body {
 
 /* Header */
 
+#primary-header {
+  align-items: center;
+  background-color: #00295e;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1em 1em;
+}
+
 #primary-header,
 #primary-header a,
 #primary-header a:visited {
@@ -51,10 +59,10 @@ body {
 }
 
 #primary-header nav ul {
-  padding: 0;
-  margin: 0.1em 0;
   font-size: 1em;
   list-style-type: none;
+  padding: 0;
+  margin: 0.1em 0;
 }
 
 #primary-header nav li {
@@ -63,9 +71,9 @@ body {
 }
 
 #primary-header nav li a {
-  padding: 0.1em;
   background-color: #ff0080;
   border-radius: 3px;
+  padding: 0.1em;
 }
 
 /* Typography */
