@@ -1,0 +1,49 @@
+/* Apply reasonable defaults */
+* {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* GRID */
+
+#layout {
+  min-height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header       header        header'
+    'left-panel   content       right-panel'
+    'footer       footer        footer';
+  grid-template-columns: 1fr 28fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+#primary-header {
+  grid-area: header;
+}
+
+#content-section {
+  grid-area: content;
+}
+
+#site-footer {
+  /*bottom: 0;*/
+  grid-area: footer;
+}
+
+/* Typography */
+
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+}
