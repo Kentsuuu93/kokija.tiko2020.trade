@@ -125,10 +125,6 @@ a:visited {
   text-shadow: 2px 2px 1px #570707;
 }
 
-#logo {
-  max-width: 6rem;
-}
-
 #site-header nav ul {
   font-size: 1em;
   list-style-type: none;
@@ -176,10 +172,6 @@ a:visited {
     font-size: 4rem;
   }
 
-  #logo {
-    max-width: 5rem;
-  }
-
   #site-header nav li a {
     font-size: 1.2em;
     padding: 0.5em;
@@ -189,10 +181,6 @@ a:visited {
 
 /* Less than 992px on 16px body font size */
 @media (max-width: 62em) {
-  #logo {
-    max-width: 4rem;
-  }
-
   #site-title {
     font-size: 3rem;
   }
@@ -213,10 +201,6 @@ a:visited {
   #site-title {
     font-size: 2rem;
     text-shadow: 1px 1px 1px #570707;
-  }
-
-  #logo {
-    max-width: 3rem;
   }
 
   #site-header nav li a {
