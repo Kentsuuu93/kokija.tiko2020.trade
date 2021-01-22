@@ -20,7 +20,7 @@ body {
 #layout {
   display: grid;
   grid-template-areas:
-    "header           header        header"
+    "header-left           header        header-right"
     "left-panel       content       right-panel"
     "footer           footer        footer";
   grid-template-columns: 1fr 28fr 1fr;
@@ -41,21 +41,38 @@ body {
   grid-area: footer;
 }
 
+#content-section,
+#site-footer {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 /* Header */
 
 #primary-header {
   align-items: center;
-  background-color: #00295e;
   display: flex;
   justify-content: space-between;
-  padding: 0.1em 1em;
+  min-height: 10em;
+  padding: 0.1em 0;
 }
 
 #primary-header,
 #primary-header a,
 #primary-header a:visited {
-  color: #0f000c;
   text-decoration: none;
+}
+
+#site-title {
+  vertical-align: middle;
+}
+
+#site-title img {
+  margin-right: .5em;
+}
+
+#logo {
+  max-width: 8rem;
 }
 
 #primary-header nav ul {
@@ -71,35 +88,106 @@ body {
 }
 
 #primary-header nav li a {
-  background-color: #ff0080;
+  font-size: 1.3em;
   border-radius: 3px;
-  padding: 0.1em;
+  padding: 0.6em;
+}
+
+/* Color theming */
+
+body {
+  background-color: #fafceb;
+  color: #0f0f0f;
+}
+
+#content-section {
+  background-color: #f9f9f9;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #591010;
+}
+
+#primary-header nav li a {
+  background-color: #a50d0e;
+  color: #f9f9f9;
 }
 
 /* Typography */
 
 body {
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
 }
 
-a {
-  color: #00295e;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#primary-header {
+  font-family: "Raleway", sans-serif;
 }
 
-a:hover {
-  color: #00295e;
+h1 {
+  font-size: 1.6rem;
 }
 
-a:visited {
-  color: #00295e;
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#content-section h1,
+#content-section h2,
+#content-section h3,
+#content-section h4,
+#content-section h5,
+#content-section h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+#site-title {
+  font-weight: 700;
 }
 
 /* Media queries */
 
-@media (min-width: 43em) {
-  #site-title {
-    font-size: 1.5em;
-    margin: 0.3em 0;
+/* Less than 1312px on 16px body font size */
+@media (max-width: 82em) {
+  #logo {
+    max-width: 6rem;
+  }
+}
+
+/* Less than 992px on 16px body font size */
+@media (max-width: 62em) {
+  #primary-header {
+    min-height: auto;
+  }
+
+  #primary-header nav li a {
+    font-size: 1em;
+    padding: .6em;
+  }
+}
+
+/* Less than 688px on 16px body font size */
+@media (max-width: 43em) {
+  #logo {
+    max-width: 3rem;
   }
 }
