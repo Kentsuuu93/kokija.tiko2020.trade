@@ -118,9 +118,9 @@ a:visited {
 }
 
 #site-title {
-  font-family: "Kaushan Script", sans-serif;
+  font-family: "Salsa", sans-serif;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: normal;
   padding: .3rem;
   text-shadow: 2px 2px 1px #570707;
 }
