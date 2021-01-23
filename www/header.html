@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="tikotiko">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="description" content="tikotiko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>kokija.tiko2020.trade</title>
+    <title>
+      <!--# if expr="$pageName" --> <!--# echo var="pageName" --> | <!--# endif
+      --> kokija.tiko2020.trade
+    </title>
 
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;700&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
     <div id="layout">
-      <header id="primary-header">
-        <p id="site-title">
-          <a href="#">kokija.tiko2020.trade</a>
-        </p>
+      <header id="site-header">
+        <a href="#" id="site-title">KoKiJa</a>
         <nav>
           <ul>
-            <li>Etusivu</li>
-            <li>Palvelut</li>
-            <li>Tuotteet</li>
-            <li>Yhteystiedot</li>
+            <li><a href="/">Etusivu</a></li>
+            <li><a href="/palvelut.html">Palvelut</a></li>
+            <li><a href="/tuotteet.html">Tuotteet</a></li>
+            <li><a href="/yhteystiedot.html">Yhteystiedot</a></li>
           </ul>
         </nav>
       </header>
-      <section id="content-section">
-      
+      <section id="site-content">
