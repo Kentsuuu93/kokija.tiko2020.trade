@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: kokija.tiko2020.trade
+Upstream-Contact: kokija.tiko2020.trade Contributors
+Source: https://github.com/Kentsuuu93/kokija.tiko2020.trade
+
+Files: *
+Copyright: 2021 kokija.tiko2020.trade Contributors
+License: MIT
+
+Files: www/android-chrome-* www/apple-touch-icon.png www/favicon*
+Copyright: 2021 Markus Murto
+License: CC-BY-4.0
+
