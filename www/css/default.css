@@ -150,7 +150,11 @@ a:visited {
   color: #f9f9f9;
 }
 
-#site-header nav li a:hover {
+#site-header nav li a:hover,
+#site-header nav ul.etusivu li.etusivu a,
+#site-header nav ul.palvelut li.palvelut a,
+#site-header nav ul.tuotteet li.tuotteet a,
+#site-header nav ul.yhteystiedot li.yhteystiedot a {
   background-color: #570707;
   box-shadow: inset 1px 1px 1px #270303;
   color: #f9f9f9;
