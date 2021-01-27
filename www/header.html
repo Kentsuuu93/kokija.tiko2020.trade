@@ -22,8 +22,12 @@
     <div id="layout">
       <header id="site-header">
         <a href="#" id="site-title">KoKiJa</a>
-        <nav>
+        <div class="hamburger-button" tabindex="1" onclick="return true">
+          &#9776; Menu
+        </div>
+        <nav id="main-menu">
           <ul class="<!--# echo var="slug" -->">
+            <li>Menu</li>
             <li class="etusivu"><a href="/">Etusivu</a></li>
             <li class="palvelut"><a href="/palvelut.html">Palvelut</a></li>
             <li class="tuotteet"><a href="/tuotteet.html">Tuotteet</a></li>

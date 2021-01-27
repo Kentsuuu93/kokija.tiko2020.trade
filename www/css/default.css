@@ -125,39 +125,47 @@ a:visited {
   text-shadow: 2px 2px 1px #570707;
 }
 
-#site-header nav ul {
+#main-menu ul {
   font-size: 1em;
   list-style-type: none;
   padding: 0;
   margin: 0.1em 0;
 }
 
-#site-header nav li {
+#main-menu li {
   display: inline-block;
   margin: 0.1em;
 }
 
-#site-header nav li a {
+#main-menu li:first-child {
+  display: none;
+}
+
+#main-menu li a {
   font-size: 1.3em;
   border-radius: 4px;
   padding: 0.6em;
   line-height: 2.5em;
 }
 
-#site-header nav li a,
-#site-header nav li a:visited {
+#main-menu li a,
+#main-menu li a:visited {
   background-color: #a50d0e;
   color: #f9f9f9;
 }
 
-#site-header nav li a:hover,
-#site-header nav ul.etusivu li.etusivu a,
-#site-header nav ul.palvelut li.palvelut a,
-#site-header nav ul.tuotteet li.tuotteet a,
-#site-header nav ul.yhteystiedot li.yhteystiedot a {
+#main-menu li a:hover,
+#main-menu ul.etusivu li.etusivu a,
+#main-menu ul.palvelut li.palvelut a,
+#main-menu ul.tuotteet li.tuotteet a,
+#main-menu ul.yhteystiedot li.yhteystiedot a {
   background-color: #570707;
   box-shadow: inset 1px 1px 1px #270303;
   color: #f9f9f9;
+}
+
+.hamburger-button {
+  display: none;
 }
 
 /* Content section styling */
@@ -176,7 +184,7 @@ a:visited {
     font-size: 4rem;
   }
 
-  #site-header nav li a {
+  #main-menu li a {
     font-size: 1.2em;
     padding: 0.5em;
     line-height: 2.3em;
@@ -193,7 +201,7 @@ a:visited {
     min-height: auto;
   }
 
-  #site-header nav li a {
+  #main-menu li a {
     font-size: 1.1em;
     padding: 0.4em;
     line-height: 2.1em;
@@ -207,9 +215,46 @@ a:visited {
     text-shadow: 1px 1px 1px #570707;
   }
 
-  #site-header nav li a {
+  .hamburger-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  #main-menu {
+    background-color: #270303;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: visibility .5s;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  #main-menu li {
+    display: block;
+    margin: 0;
+  }
+
+  #main-menu li:first-child {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  #main-menu li a {
+    border-radius: 0;
+    display: block;
     font-size: 1em;
-    padding: 0.3em;
     line-height: 1.9em;
+    padding: 0.3em;
+    text-align: center;
+  }
+  
+  .hamburger-button,
+  .hamburger-button:focus + #main-menu,
+  #main-menu li:hover {
+    visibility: visible;
   }
 }
