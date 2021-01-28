@@ -164,7 +164,9 @@ a:visited {
   color: #f9f9f9;
 }
 
-.hamburger-button {
+.hamburger-button,
+#site-header input[type=checkbox],
+#main-menu > label:last-child {
   display: none;
 }
 
@@ -221,13 +223,12 @@ a:visited {
   }
 
   #main-menu {
-    background-color: #270303;
+    bottom: 0;
     left: 0;
     position: absolute;
+    right: 0;
     top: 0;
-    transition: visibility .5s;
     visibility: hidden;
-    width: 100%;
   }
 
   #main-menu li {
@@ -240,7 +241,21 @@ a:visited {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 3rem;
+  }
+
+  #main-menu li:first-child label {
+    background-color: #270303;
+    display: block;
+    left: 0;
     text-align: center;
+    padding: 0 10px;
+    right: 0;
+  }
+
+  #main-menu li:first-child label div {
+    display: inline;
+    position: absolute;
+    right: 1rem;
   }
 
   #main-menu li a {
@@ -253,8 +268,13 @@ a:visited {
   }
   
   .hamburger-button,
-  .hamburger-button:focus + #main-menu,
-  #main-menu li:hover {
+  input[type="checkbox"]:checked ~ #main-menu {
     visibility: visible;
+  }
+
+  #main-menu > label:last-child {
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }
