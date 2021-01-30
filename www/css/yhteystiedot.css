@@ -1,3 +1,28 @@
+/* Grid */
+
+.contact-grid {
+  display: grid;
+  grid-template-areas:
+    "main staff"
+    "form form";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-main {
+  display: grid;
+  grid-area: main;
+}
+.contact-staff {
+  display: grid;
+  grid-area: staff;
+}
+.contact-form {
+  display: grid;
+  grid-area: form;
+}
+
+/* Muut tyylittelyt */
+
 li {
   list-style: none;
   margin-top: 0.4rem;
