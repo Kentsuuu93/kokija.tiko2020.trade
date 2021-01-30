@@ -21,6 +21,18 @@
   grid-area: form;
 }
 
+/* Mobile grid */
+
+@media (max-width: 43em) {
+  .contact-grid {
+    grid-template-areas:
+    "main"
+    "staff"
+    "form";
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Muut tyylittelyt */
 
 li {
