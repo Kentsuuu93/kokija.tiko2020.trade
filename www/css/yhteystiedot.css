@@ -44,7 +44,7 @@ label {
 textarea {
   width: 100%;
   border-radius: 4px;
-  padding: 0.4rem;
+  padding: auto;
 }
 input[type="submit"] {
   padding: 0.4rem;
