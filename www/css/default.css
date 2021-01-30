@@ -50,7 +50,6 @@ body {
 /* Typography and theming */
 
 body {
-  background-color: #fafceb;
   color: #0f0f0f;
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
@@ -173,8 +172,18 @@ a:visited {
 /* Content section styling */
 
 #site-content {
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.9);
 }
+
+/* Background image */
+
+html {
+  background-image: url(../img/taustakuva.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    
 
 /* Site footer styling */
 
