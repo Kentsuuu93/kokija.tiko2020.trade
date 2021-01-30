@@ -20,9 +20,9 @@ body {
 #layout {
   display: grid;
   grid-template-areas:
-    "header-left           header        header-right"
-    "left-panel       content       right-panel"
-    "footer           footer        footer";
+    "header-left        header        header-right"
+    "content-left       content       content-right"
+    "footer-left        footer        footer-right";
   grid-template-columns: 1fr 80rem 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
@@ -37,14 +37,7 @@ body {
 }
 
 #site-footer {
-  /*bottom: 0;*/
   grid-area: footer;
-}
-
-#site-content,
-#site-footer {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 /* Typography and theming */
@@ -105,7 +98,7 @@ a:visited {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0.5em 0;
+  padding: 2rem 0;
 }
 
 #site-header,
@@ -173,6 +166,12 @@ a:visited {
 
 #site-content {
   background-color: rgba(249, 249, 249, 0.9);
+  border-radius: 4px;
+  padding: 1.5em;
+}
+
+#site-content > *:first-child {
+  margin-top: 0;
 }
 
 /* Background image */
@@ -183,9 +182,16 @@ html {
   background-attachment: fixed;
   background-size: cover;
 }
-    
 
 /* Site footer styling */
+
+#site-footer {
+  background-color: rgba(12, 12, 12, 0.9);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-top: 1.5rem;
+  padding: 1.5em;
+}
 
 /* Media queries */
 
@@ -193,6 +199,10 @@ html {
 @media (max-width: 82em) {
   #layout {
     grid-template-columns: 1fr 28fr 1fr;
+  }
+
+  #site-header {
+    padding: 1.8rem 0;
   }
 
   #site-title {
@@ -204,6 +214,16 @@ html {
     padding: 0.5em;
     line-height: 2.3em;
   }
+
+  #site-content {
+    padding: 1.3em;
+  }
+
+  #site-footer {
+    color: #f9f9f9;
+    margin-top: 1.3em;
+    padding: 1.3em;
+  }
 }
 
 /* Less than 992px on 16px body font size */
@@ -213,7 +233,7 @@ html {
   }
 
   #site-header {
-    min-height: auto;
+    padding: 1.5rem 0;
   }
 
   #main-menu li a {
@@ -221,10 +241,23 @@ html {
     padding: 0.4em;
     line-height: 2.1em;
   }
+
+  #site-content {
+    padding: 1em;
+  }
+
+  #site-footer {
+    margin-top: 1em;
+    padding: 1em;
+  }
 }
 
 /* Less than 688px on 16px body font size */
 @media (max-width: 43em) {
+  #site-header {
+    padding: 1rem 0;
+  }
+
   #site-title {
     font-size: 2rem;
     text-shadow: 1px 1px 1px #570707;
@@ -289,5 +322,14 @@ html {
     display: block;
     height: 100%;
     width: 100%;
+  }
+
+  #site-content {
+    padding: 0.7em;
+  }
+
+  #site-footer {
+    margin-top: 0.7em;
+    padding: 0.7em;
   }
 }
