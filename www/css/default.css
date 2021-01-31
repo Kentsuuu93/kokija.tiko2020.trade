@@ -15,6 +15,10 @@ body {
   display: none !important;
 }
 
+.clear {
+  clear: both;
+}
+
 /* GRID */
 
 #layout {
@@ -201,25 +205,22 @@ a:visited {
   margin: 0.4em 0;
 }
 
-input[type="radio"] {
-  margin-right: 0.5rem;
+input,
+textarea {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.3em;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 0.3rem;
+  padding: 0.3em;
   border-radius: 4px;
-}
-
-label {
-  display: inline-block;
-  width: 7em;
-}
-
-textarea {
-  width: 100%;
-  border-radius: 4px;
-  padding: auto;
 }
 
 input[type="submit"] {
@@ -229,6 +230,29 @@ input[type="submit"] {
   float: right;
   border: 1px solid #a50d0e;
   color: #a50d0e;
+}
+
+label {
+  display: inline-block;
+  min-width: 7rem;
+}
+
+textarea {
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+fieldset {
+  background-color: #e0e0e0ee;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+fieldset legend {
+  background-color: #e0e0e0ee;
+  padding: 0.2rem 0.4rem;
 }
 
 /* Background image */
@@ -404,5 +428,10 @@ html {
 
   .dual-flex-container > div:last-child {
     margin-left: 0;
+  }
+
+  label:not(.radio-label) {
+    display: block;
+    min-width: auto;
   }
 }
