@@ -29,43 +29,31 @@
     <h2>Ota yhteyttä tai anna palautetta</h2>
     <form>
       <fieldset>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="feedback-type"
-              id="form-feedback1"
-              value="contact"
-              checked
-            />Ota yhteyttä
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="feedback-type"
-              id="form-feedback2"
-              value="feedback"
-            />Anna palautetta
-          </li>
-          <li>
-            <label for="form-name">Nimesi:</label>
-            <input type="text" name="contactname" id="form-name" required />
-          </li>
-          <li>
-            <label for="form-email">Sähköpostisi:</label>
-            <input type="email" name="email" id="form-email" required />
-          </li>
-          <li>
-            Viestisi:<br />
-            <textarea
-              name="message"
-              rows="8"
-              maxlength="400"
-              id="form-message"
-              required
-            ></textarea>
-          </li>
-        </ul>
+        <input
+          type="radio"
+          name="feedback-type"
+          id="form-feedback1"
+          value="contact"
+          checked
+        />Ota yhteyttä
+        <input
+          type="radio"
+          name="feedback-type"
+          id="form-feedback2"
+          value="feedback"
+        />Anna palautetta
+        <label for="form-name">Nimesi:</label>
+        <input type="text" name="contactname" id="form-name" required />
+        <label for="form-email">Sähköpostisi:</label>
+        <input type="email" name="email" id="form-email" required />
+        Viestisi:<br />
+        <textarea
+          name="message"
+          rows="8"
+          maxlength="400"
+          id="form-message"
+          required
+        ></textarea>
       </fieldset>
       <p>
         <input type="submit" value="Lähetä" />
