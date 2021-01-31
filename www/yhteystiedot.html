@@ -3,8 +3,8 @@
 <!--# include file="header.html" -->
 <h1>Yhteystiedot</h1>
 
-<section class="contact-grid">
-  <div class="contact-main">
+<section class="dual-flex-container">
+  <div>
     <h2>Yleiset yhteystiedot</h2>
     <ul>
       <li>Kokija Oy</li>
@@ -13,7 +13,7 @@
       <li>Käyntiosoite: Mariankatu 2</li>
     </ul>
   </div>
-  <div class="contact-staff">
+  <div>
     <h2>Henkilöstö</h2>
     <!-- TODO sprint 4 -->
     <p>
@@ -24,41 +24,39 @@
       Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.
     </p>
   </div>
-
-  <div class="contact-form">
-    <h2>Ota yhteyttä tai anna palautetta</h2>
-    <form>
-      <fieldset>
-        <input
-          type="radio"
-          name="feedback-type"
-          id="form-feedback1"
-          value="contact"
-          checked
-        />Ota yhteyttä
-        <input
-          type="radio"
-          name="feedback-type"
-          id="form-feedback2"
-          value="feedback"
-        />Anna palautetta
-        <label for="form-name">Nimesi:</label>
-        <input type="text" name="contactname" id="form-name" required />
-        <label for="form-email">Sähköpostisi:</label>
-        <input type="email" name="email" id="form-email" required />
-        Viestisi:<br />
-        <textarea
-          name="message"
-          rows="8"
-          maxlength="400"
-          id="form-message"
-          required
-        ></textarea>
-      </fieldset>
-      <p>
-        <input type="submit" value="Lähetä" />
-      </p>
-    </form>
-  </div>
 </section>
+
+<h2>Ota yhteyttä tai anna palautetta</h2>
+<form>
+  <fieldset>
+    <input
+      type="radio"
+      name="feedback-type"
+      id="form-feedback1"
+      value="contact"
+      checked
+    />Ota yhteyttä
+    <input
+      type="radio"
+      name="feedback-type"
+      id="form-feedback2"
+      value="feedback"
+    />Anna palautetta
+    <label for="form-name">Nimesi:</label>
+    <input type="text" name="contactname" id="form-name" required />
+    <label for="form-email">Sähköpostisi:</label>
+    <input type="email" name="email" id="form-email" required />
+    Viestisi:<br />
+    <textarea
+      name="message"
+      rows="8"
+      maxlength="400"
+      id="form-message"
+      required
+    ></textarea>
+  </fieldset>
+  <p>
+    <input type="submit" value="Lähetä" />
+  </p>
+</form>
 <!--# include file="footer.html" -->

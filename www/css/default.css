@@ -174,28 +174,23 @@ a:visited {
   margin-top: 0;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-areas:
-    "main staff"
-    "form form";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+.dual-flex-container {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
 }
 
-.contact-main {
-  display: grid;
-  grid-area: main;
+.dual-flex-container > div {
+  box-sizing: border-box;
+  max-width: 50%;
 }
 
-.contact-staff {
-  display: grid;
-  grid-area: staff;
+.dual-flex-container > div:first-child {
+  margin-right: 0.5rem;
 }
 
-.contact-form {
-  display: grid;
-  grid-area: form;
+.dual-flex-container > div:last-child {
+  margin-left: 0.5rem;
 }
 
 li {
@@ -393,11 +388,19 @@ html {
     padding: 0.7em;
   }
 
-  .contact-grid {
-    grid-template-areas:
-    "main"
-    "staff"
-    "form";
-    grid-template-columns: 1fr;
+  .dual-flex-container {
+    display: block;
+  }
+
+  .dual-flex-container > div {
+    max-width: 100%;
+  }
+
+  .dual-flex-container > div:first-child {
+    margin-right: 0;
+  }
+
+  .dual-flex-container > div:last-child {
+    margin-left: 0;
   }
 }
