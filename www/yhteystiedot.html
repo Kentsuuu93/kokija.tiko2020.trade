@@ -50,15 +50,15 @@
 
   <fieldset>
     <legend>Yhteystietosi</legend>
-    <label for="form-name">Nimesi:</label>
+    <label for="form-name">Nimesi <span class="required">*</span></label>
     <input type="text" name="contactname" id="form-name" required />
     <br>
-    <label for="form-email">Sähköpostisi:</label>
+    <label for="form-email">Sähköpostisi <span class="required">*</span></label>
     <input type="email" name="email" id="form-email" required />
   </fieldset>
 
   <fieldset>
-    <legend>Viestisi</legend>
+    <legend>Viestisi <span class="required">*</span></legend>
     <textarea
       name="message"
       rows="8"

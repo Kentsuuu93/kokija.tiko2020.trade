@@ -207,14 +207,18 @@ a:visited {
 
 input,
 textarea {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  padding: 0.2em;
+  min-width: 24rem;
+  padding: 0.5em;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 0.3em;
+  min-width: auto;
 }
 
 input[type="text"],
@@ -224,12 +228,14 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  padding: 0.4rem;
-  font-size: 1.2em;
-  border-radius: 4px;
-  float: right;
   border: 1px solid #a50d0e;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #270303;
   color: #a50d0e;
+  float: right;
+  font-size: 1.2em;
+  min-width: 20%;
+  padding: 0.4rem;
 }
 
 label {
@@ -240,19 +246,25 @@ label {
 textarea {
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0.5em;
   width: 100%;
 }
 
 fieldset {
   background-color: #e0e0e0ee;
+  border-radius: 4px;
   margin-bottom: 1rem;
   padding: 0.5rem;
 }
 
 fieldset legend {
   background-color: #e0e0e0ee;
+  border-radius: 4px;
   padding: 0.2rem 0.4rem;
+}
+
+span.required {
+  color: #a50d0e;
+  font-size: 0.8em;
 }
 
 /* Background image */
@@ -433,5 +445,9 @@ html {
   label:not(.radio-label) {
     display: block;
     min-width: auto;
+  }
+
+  input {
+    min-width: 100%;
   }
 }
