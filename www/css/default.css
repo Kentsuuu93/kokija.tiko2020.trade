@@ -548,7 +548,7 @@ img:nth-child(5) {
     right: 0;
   }
 
-  #main-menu li:first-child label div {
+  #main-menu li:first-child label span {
     display: inline;
     position: absolute;
     right: 1rem;
