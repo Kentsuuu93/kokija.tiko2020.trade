@@ -374,10 +374,14 @@ html {
 
 @keyframes display {
   0% {
-    transform: translateX(5vw);
+    transform: 
+      translateX(2vw)
+      perspective(75em)
+      rotateY(-10deg)
+      scale(1.1, 1.1);
     opacity: 0;
   }
-  10% {
+  2% {
     transform: translateX(0);
     opacity: 1;
   }
@@ -385,10 +389,19 @@ html {
     transform: translateX(0);
     opacity: 1;
   }
-  30% {
-    transform: translateX(-5vw);
+  23% {
+    transform: 
+      translateX(-5vw)
+      perspective(75em)
+      rotateY(-10deg)
+      scale(0.9, 0.9);
     opacity: 0;
   }
+  30% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
   100% {
     transform: translateX(-5vw);
     opacity: 0;
@@ -408,6 +421,9 @@ html {
   opacity: 0;
   animation: display 50s infinite;
   animation-delay: -2s;
+  box-shadow: rgba(25, 25, 25, 0.3) 0 5px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 img:nth-child(2) {
