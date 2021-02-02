@@ -1,0 +1,68 @@
+/* Grid */
+
+.contact-grid {
+  display: grid;
+  grid-template-areas:
+    "main staff"
+    "form form";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-main {
+  display: grid;
+  grid-area: main;
+}
+.contact-staff {
+  display: grid;
+  grid-area: staff;
+}
+.contact-form {
+  display: grid;
+  grid-area: form;
+}
+
+/* Mobile grid */
+
+@media (max-width: 43em) {
+  .contact-grid {
+    grid-template-areas:
+    "main"
+    "staff"
+    "form";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Muut tyylittelyt */
+
+li {
+  list-style: none;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+label {
+  display: inline-block;
+  width: 7em;
+}
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: auto;
+}
+input[type="submit"] {
+  padding: 0.4rem;
+  font-size: 1.2em;
+  border-radius: 4px;
+  float: right;
+  border: 1px solid #a50d0e;
+  color: #a50d0e;
+}

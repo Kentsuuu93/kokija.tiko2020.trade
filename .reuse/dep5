@@ -11,3 +11,6 @@ Files: www/android-chrome-* www/apple-touch-icon.png www/favicon*
 Copyright: 2021 Markus Murto
 License: CC-BY-4.0
 
+Files: www/img/*
+Copyright: 2021 Annukka Kinnari
+License: LicenseRef-Nonfree
