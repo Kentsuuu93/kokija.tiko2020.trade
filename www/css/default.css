@@ -246,12 +246,14 @@ a:visited {
 }
 
 .button {
-  background-color: #a50d0e;
-  border: none;
+  background-color: #EFE1C8; /* a50d0e */
+  border: 1px #e9c29b;
+  border-style: solid none none solid;
   box-sizing: border-box;
-  box-shadow: 1px 1px 1px #270303;
-  color: white;
-  padding: 1rem 2rem;
+  box-shadow: 1px 1px 1px #86785f;
+  color: #a50d0e;
+  font-weight: 700;
+  padding: 0.4em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -262,7 +264,7 @@ a:visited {
 a.button,
 a.button:hover,
 a.button:visited {
-  color: white;
+  color: #a50d0e;
 }
 
 .wide-button {
@@ -315,10 +317,12 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  border: 1px solid #a50d0e;
+  background-color: #0da559; /* a50d0e */
+  border: 1px #0fd472;
+  border-style: solid none none solid;
   border-radius: 4px;
-  box-shadow: 1px 1px 1px #270303;
-  color: #a50d0e;
+  box-shadow: 1px 1px 1px #076636;
+  color: #042413;
   float: right;
   font-size: 1.2em;
   min-width: 20%;
