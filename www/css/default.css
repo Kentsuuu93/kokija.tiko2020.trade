@@ -294,6 +294,10 @@ a.button:visited {
   width: 100%;
 }
 
+figure > img {
+  max-width: 100%;
+}
+
 /* Forms */
 
 input,
