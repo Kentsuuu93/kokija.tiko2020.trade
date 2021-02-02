@@ -374,11 +374,7 @@ html {
 
 @keyframes display {
   0% {
-    transform: 
-      translateX(2vw)
-      perspective(75em)
-      rotateY(-10deg)
-      scale(1.1, 1.1);
+    transform: translateX(2vw) perspective(75em) rotateY(-10deg) scale(1.1, 1.1);
     opacity: 0;
   }
   2% {
@@ -390,10 +386,7 @@ html {
     opacity: 1;
   }
   23% {
-    transform: 
-      translateX(-5vw)
-      perspective(75em)
-      rotateY(-10deg)
+    transform: translateX(-5vw) perspective(75em) rotateY(-10deg)
       scale(0.9, 0.9);
     opacity: 0;
   }
