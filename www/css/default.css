@@ -406,20 +406,21 @@ html {
   top: 0;
   width: 100%;
   opacity: 0;
-  animation: display 10s infinite;
+  animation: display 50s infinite;
+  animation-delay: -2s;
 }
 
 img:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 8s;
 }
 img:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 18s;
 }
 img:nth-child(4) {
-  animation-delay: 6s;
+  animation-delay: 28s;
 }
 img:nth-child(5) {
-  animation-delay: 8s;
+  animation-delay: 38s;
 }
 
 /* Site footer styling */
