@@ -276,6 +276,20 @@ a.button:visited {
   margin-bottom: 1rem;
 }
 
+.video-container {
+  overflow: hidden;
+  padding-bottom: 60%; /* Hack to accommodate roughly 16:9 video */
+  position: relative;
+}
+
+.video-container > iframe {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 /* Forms */
 
 input,
@@ -479,6 +493,17 @@ img:nth-child(5) {
 
 /* Less than 688px on 16px body font size */
 @media (max-width: 43em) {
+  .left,
+  .right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .half {
+    width: 100%;
+  }
+
   #site-header {
     padding: 1rem 0;
   }
