@@ -12,6 +12,7 @@ Sivuston tarvitsemat ulkopuoliset komponentit ja sovellukset:
 ### Kävijälle ladattavat komponentit
 - Google Fonts: Sivustolle ladataan useita fontteja [Google Fonts](https://fonts.google.com/) -palvelusta.
 - Youtube Embedded Player: Sivuston Palvelut-sivulla kävijälle ladataan useita erilaisia komponentteja Youtube-videon upotuksen toteuttamiseksi (ainakin HTML, CSS, JS ja kuvatiedostoja)
+- Google Maps Embed: Etusivulla kävijälle ladataan useita erilaisia komponentteja Google Maps -karttaupotuksen toteuttamiseksi (ainakin HTML, CSS, JS ja kuvatiedostoja)
 ### Palvelinvaatimukset
 - NGINX: Sivusto käyttää NGINX-palvelimen [SSI-ominaisuutta](http://nginx.org/en/docs/http/ngx_http_ssi_module.html).
 
