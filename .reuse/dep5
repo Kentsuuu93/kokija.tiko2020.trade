@@ -14,3 +14,7 @@ License: CC-BY-4.0
 Files: www/img/*
 Copyright: 2021 Annukka Kinnari
 License: LicenseRef-Nonfree
+
+Files: www/flags/*
+Copyright: These files are in Public Domain, copied from Wikimedia
+License: public-domain
