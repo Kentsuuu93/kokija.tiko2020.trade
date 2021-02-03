@@ -612,7 +612,8 @@ img:nth-child(5) {
     min-width: auto;
   }
 
-  input {
+  input,
+  textarea {
     min-width: 100%;
   }
 }
