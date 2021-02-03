@@ -191,10 +191,14 @@ a:visited {
 }
 
 #main-menu li a:hover,
-#main-menu ul.etusivu li.etusivu a,
+#main-menu ul.index li.index a,
 #main-menu ul.palvelut li.palvelut a,
 #main-menu ul.tuotteet li.tuotteet a,
-#main-menu ul.yhteystiedot li.yhteystiedot a {
+#main-menu ul.yhteystiedot li.yhteystiedot a,
+#main-menu ul.index-en li.index-en a,
+#main-menu ul.services li.services a,
+#main-menu ul.products li.products a,
+#main-menu ul.contacts li.contacts a {
   background-color: #570707;
   box-shadow: inset 1px 1px 1px #270303;
   color: #f9f9f9;
@@ -204,6 +208,17 @@ a:visited {
 #site-header input[type="checkbox"],
 #main-menu > label:last-child {
   display: none;
+}
+
+ul#language-menu {
+  list-style-type: none;
+  line-height: normal;
+}
+
+#language-menu img {
+  border-radius: 4px;
+  max-height: 2rem;
+  padding: 0;
 }
 
 /* Content section styling */
@@ -483,6 +498,10 @@ img:nth-child(5) {
     margin-top: 1.3em;
     padding: 1.3em;
   }
+
+  #language-menu img {
+    max-height: 1.8rem;
+  }
 }
 
 /* Less than 992px on 16px body font size */
@@ -508,6 +527,10 @@ img:nth-child(5) {
   #site-footer {
     margin-top: 1em;
     padding: 1em;
+  }
+
+  #language-menu img {
+    max-height: 1.5rem;
   }
 }
 
@@ -615,5 +638,9 @@ img:nth-child(5) {
   input,
   textarea {
     min-width: 100%;
+  }
+
+  #language-menu img {
+    max-height: 1.2rem;
   }
 }
