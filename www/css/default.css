@@ -466,6 +466,7 @@ img:nth-child(5) {
   color: #f9f9f9;
   margin-top: 1.5rem;
   padding: 1.5em;
+  text-align: center;
 }
 
 /* Media queries */
