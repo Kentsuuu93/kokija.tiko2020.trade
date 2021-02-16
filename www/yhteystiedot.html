@@ -1,5 +1,8 @@
 <!--# set var="pageName" value="Yhteystiedot" -->
 <!--# set var="slug" value="yhteystiedot" -->
+<!--# set var="slug-en" value="contacts" -->
+<!--# set var="lang" value="fi" -->
+<!--# set var="pageDescription" value="Ota meihin yhteyttä!" -->
 <!--# include file="header.html" -->
 <h1>Yhteystiedot</h1>
 
@@ -7,22 +10,21 @@
   <div>
     <h2>Yleiset yhteystiedot</h2>
     <ul class="contact-info-list">
-      <li>Kokija Oy</li>
-      <li>Vaihde: 010 123 456</li>
-      <li>Postiosoite: PL 123, 00000 HELSINKI</li>
-      <li>Käyntiosoite: Mariankatu 2</li>
+      <li>KoKiJa kuvitteellinen yritys</li>
+      <li>Vaihde: 12345678</li>
+      <li>Sähköposti: email@domain.tld</li>
+      <li>Postiosoite: 20100 TURKU</li>
+      <li>Käyntiosoite: Kauppatori</li>
     </ul>
   </div>
   <div>
     <h2>Henkilöstö</h2>
-    <!-- TODO sprint 4 -->
-    <p>
-      Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem
-      velit accumsan velit vel mattis libero nisl et sem. Proin interdum
-      maecenas massa turpis sagittis in, interdum non lobortis vitae massa.
-      Quisque purus lectus, posuere eget imperdiet nec sodales id arcu.
-      Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.
-    </p>
+    <h3>Asiakaspalvelupäällikkö</h3>
+    <p>Aimo Kehu (aimo.kehu@domain.tld)</p>
+    <h3>Kurssivastaava</h3>
+    <p>Oiva Taitos (oiva.taitos@domain.tld)</p>
+    <h3>Matkasuunnittelija</h3>
+    <p>Hua Dehao (hua.dehao@domain.tld)</p>
   </div>
 </section>
 
@@ -38,7 +40,7 @@
       checked
     />
     <label for="form-feedback1" class="radio-label">Ota yhteyttä</label>
-    <br>
+    <br />
     <input
       type="radio"
       name="feedback-type"
@@ -52,7 +54,7 @@
     <legend>Yhteystietosi</legend>
     <label for="form-name">Nimesi <span class="required">*</span></label>
     <input type="text" name="contactname" id="form-name" required />
-    <br>
+    <br />
     <label for="form-email">Sähköpostisi <span class="required">*</span></label>
     <input type="email" name="email" id="form-email" required />
   </fieldset>

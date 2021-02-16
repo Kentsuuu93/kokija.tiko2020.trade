@@ -1,3 +1,5 @@
 # ignoorataan Windows Explorerin aputiedostot
 desktop.ini
 
+# vimin swappifiulut
+*.swp

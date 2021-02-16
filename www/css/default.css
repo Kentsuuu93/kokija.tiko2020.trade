@@ -191,10 +191,14 @@ a:visited {
 }
 
 #main-menu li a:hover,
-#main-menu ul.etusivu li.etusivu a,
+#main-menu ul.index li.index a,
 #main-menu ul.palvelut li.palvelut a,
 #main-menu ul.tuotteet li.tuotteet a,
-#main-menu ul.yhteystiedot li.yhteystiedot a {
+#main-menu ul.yhteystiedot li.yhteystiedot a,
+#main-menu ul.index-en li.index-en a,
+#main-menu ul.services li.services a,
+#main-menu ul.products li.products a,
+#main-menu ul.contacts li.contacts a {
   background-color: #570707;
   box-shadow: inset 1px 1px 1px #270303;
   color: #f9f9f9;
@@ -204,6 +208,17 @@ a:visited {
 #site-header input[type="checkbox"],
 #main-menu > label:last-child {
   display: none;
+}
+
+ul#language-menu {
+  list-style-type: none;
+  line-height: normal;
+}
+
+#language-menu img {
+  border-radius: 4px;
+  max-height: 2rem;
+  padding: 0;
 }
 
 /* Content section styling */
@@ -220,6 +235,7 @@ a:visited {
 
 .dual-flex-container,
 .triple-flex-container {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -239,6 +255,10 @@ a:visited {
   flex: 3;
 }
 
+.vertically-centered {
+  align-self: center;
+}
+
 .contact-info-list {
   list-style: none;
 }
@@ -248,7 +268,7 @@ a:visited {
 }
 
 .button {
-  background-color: #EFE1C8; /* a50d0e */
+  background-color: #efe1c8; /* a50d0e */
   border: 1px #e9c29b;
   border-style: solid none none solid;
   box-sizing: border-box;
@@ -296,6 +316,18 @@ a.button:visited {
 
 figure > img {
   max-width: 100%;
+}
+
+#front-page-map {
+  width: 100%;
+  min-height: 20rem;
+}
+
+.product-price {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 /* Forms */
@@ -451,6 +483,7 @@ img:nth-child(5) {
   color: #f9f9f9;
   margin-top: 1.5rem;
   padding: 1.5em;
+  text-align: center;
 }
 
 /* Media queries */
@@ -483,6 +516,10 @@ img:nth-child(5) {
     margin-top: 1.3em;
     padding: 1.3em;
   }
+
+  #language-menu img {
+    max-height: 1.8rem;
+  }
 }
 
 /* Less than 992px on 16px body font size */
@@ -508,6 +545,10 @@ img:nth-child(5) {
   #site-footer {
     margin-top: 1em;
     padding: 1em;
+  }
+
+  #language-menu img {
+    max-height: 1.5rem;
   }
 }
 
@@ -607,12 +648,21 @@ img:nth-child(5) {
     display: block;
   }
 
+  .product-price {
+    margin-bottom: 1rem;
+  }
+
   label:not(.radio-label) {
     display: block;
     min-width: auto;
   }
 
-  input {
+  input,
+  textarea {
     min-width: 100%;
+  }
+
+  #language-menu img {
+    max-height: 1.2rem;
   }
 }
